@@ -8,3 +8,6 @@ usethis::create_from_github(
   repo_spec = "djnavarro/arrow-user2022", 
   destdir="."
 )
+
+# Install the package dependencies
+remotes::install_deps()
