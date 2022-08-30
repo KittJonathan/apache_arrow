@@ -4,7 +4,20 @@
 # Load packages ----
 
 library(arrow)
+library(dplyr)
+library(dbplyr)
+library(duckdb)
+library(stringr)
+library(lubridate)
+library(palmerpenguins)
+library(tictoc)
+library(scales)
+library(janitor)
+library(fs)
 library(here)
+library(ggplot2)
+library(ggrepel)
+library(sf)
 
 # Download and unzip the data ----
 
