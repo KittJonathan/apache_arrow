@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+data/nyc-taxi-tiny
+data/nyc-taxi-tiny.zip

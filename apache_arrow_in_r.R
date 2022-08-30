@@ -1,13 +1,19 @@
 # Apache Arrow in R workshop tutorial
-# last updated 2022-08-30
+# Last updated 2022-08-30
 
-# Quick start guide ----
+# Load packages ----
 
-# Download a copy of the git repo
-usethis::create_from_github(
-  repo_spec = "djnavarro/arrow-user2022", 
-  destdir="."
+library(arrow)
+library(here)
+
+# Download and unzip the data ----
+
+download.file(
+  url = "https://github.com/djnavarro/arrow-user2022/releases/download/v0.1/nyc-taxi-tiny.zip",
+  destfile = here::here("data/nyc-taxi-tiny.zip")
 )
 
-# Install the package dependencies
-remotes::install_deps()
+unzip(
+  zipfile = here::here("data/nyc-taxi-tiny.zip"), 
+  exdir = here::here("data")
+)
